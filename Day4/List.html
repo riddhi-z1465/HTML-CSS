@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        ul {
+            list-style-type: circle;
+        }
+
+        ol.a {
+            list-style-type: upper-roman;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>Basic Unordered List</h2>
+    <ul>
+        <li>Apples</li>
+        <li>Bananas</li>
+        <li>Cherries</li>
+    </ul>
+
+    <h2>Basic Ordered List</h2>
+    <ol class="a">
+        <li>Wake up</li>
+        <li>Brush teeth</li>
+        <li>Eat breakfast</li>
+    </ol>
+
+    <h2> Ordered List with start Attribute</h2>
+    <ol start="10">
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ol>
+
+    <h2>Nested Unordered List</h2>
+    <ul>
+        <li>Fruits
+          <ul>
+            <li>Apple</li>
+            <li>Mango</li>
+          </ul>
+        </li>
+        <li>Vegetables</li>
+      </ul>
+
+      
+      <h2>Mixed OL & UL</h2>
+      <ol>
+        <li>Shopping List
+          <ul>
+            <li>Milk</li>
+            <li>Bread</li>
+          </ul>
+        </li>
+        <li>Exercise</li>
+      </ol>
+
+      <h2>Styled UL with Square Bullets</h2>
+      <ul style="list-style-type: none;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+
+      <h2>Reverse Ordered List</h2>
+      <ol reversed>
+        <li>Third</li>
+        <li>Second</li>
+        <li>First</li>
+      </ol>
+
+      <h2>Styled OL with Alphabetical Labels</h2>
+      <ol type="a">
+        <li>Plan</li>
+        <li>Design</li>
+        <li>Develop</li>
+        <li>Deploy</li>
+      </ol>
+
+      <h2>Horizontal UL (Menu Style)</h2>
+      <ul style="list-style: none; display: flex; gap: 20px;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <h2>Checklist with Emojis</h2>
+      <ul style="list-style-image: url('shopping-cart.png');">
+        <li> Buy groceries</li>
+        <li> Finish homework</li>
+        <li> Clean room</li>
+      </ul>
+
+      <h2>Multi-column UL</h2>
+      <ul style="columns: 3; -webkit-columns: 3; -moz-columns: 3;">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+      </ul>
+
+      <h2>Timeline Style OL</h2>
+      <ol style="list-style-position: inside;padding-left: 0;">
+        <li>2000 - Born</li>
+        <li>2018 - Graduated High School</li>
+        <li>2022 - Finished College</li>
+      </ol>
+
+      
+      <h2>Styled UL as Tags</h2>
+      <ul style="list-style: none; display: flex; gap: 10px;">
+        <li style="background: #e4a1a1; padding: 5px 10px; border-radius: 5px;">HTML</li>
+        <li style="background: #c36bec; padding: 5px 10px; border-radius: 5px;">CSS</li>
+        <li style="background: #70e0ec; padding: 5px 10px; border-radius: 5px;">JavaScript</li>
+      </ul>
+
+      <h2>Numbered Steps with Icons</h2>
+      <ol>
+        <li>🔍 Research</li>
+        <li>✍️ Write</li>
+        <li>🧪 Test</li>
+        <li>🚀 Launch</li>
+      </ol>
+
+      <h2>UL with Custom Bullet Images</h2>
+      <ul style="list-style-image: url('https://s11.aconvert.com/convert/p3r68-cdx67/c9475-urnbb-001.ico');">
+        <li>News</li>
+        <li>Blog</li>
+        <li>Tutorials</li>
+      </ul>
+
+      <h2> OL for Quiz Answers</h2>
+      <ol type="A">
+        <li>Paris</li>
+        <li>London</li>
+        <li>Berlin</li>
+        <li>Madrid</li>
+      </ol>
+      
+</body>
+
+</html>

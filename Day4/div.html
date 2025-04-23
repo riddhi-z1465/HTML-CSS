@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Tag</title>
+    <style>
+        body{
+            background-image: url('https://i.pinimg.com/736x/f4/7b/77/f47b7762538f1888de5450b3c50f224c.jpg');
+            background-size: cover;
+        }
+        .custom-button {
+            display: inline-block;
+            background: orange;
+            padding: 10px 20px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background: rgb(187, 69, 226);
+            
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h2>Basic Box</h2>
+    <div style="background-color: rgb(203, 240, 170); padding: 30px;">
+        Hello, I am a box!
+    </div>
+
+    <h2>Two Boxes Side by Side </h2>
+    <div style="display: flex;">
+        <div style="background: salmon; width: 30%;padding: 10px;">Left</div>
+        <div style="background: lightgreen; width: 70%; padding: 10px;">Right</div>
+    </div>
+
+    <h2>Centre a div</h2>
+    <div style="width: 300px; margin: 0 auto; background: #ddd; text-align: center;">
+        I’m centered!
+    </div>
+
+    <h2>Colored Header and Footer</h2>
+    <div style="background: navy; color: white; padding: 10px; border: 1px solid black;">Header</div>
+    <div style="padding: 20px;border: 1px solid black;">Main Content Here</div>
+    <div style="background: gray; color: white; padding: 10px;border: 1px solid black;">Footer</div>
+
+    <h2>Nested Divs</h2>
+    <div style="background: lightgray; padding: 20px;border: 1px solid black;">
+        Outer Div
+        <div style="background: white; padding: 10px; margin-top: 10px;border: 1px solid black;">
+            Inner Div
+        </div>
+    </div>
+    <h2> Div as Button</h2>
+    <div class="custom-button"
+        style="display: inline-block; background: orange; padding: 10px 20px; color: white; cursor: pointer;">
+        Click Me
+    </div>
+
+    <h2>Responsive Box</h2>
+    <div style="width: 100%; max-width: 500px; background: #f9f9f9; padding: 20px; margin: auto;">
+        This box adjusts its size!
+    </div>
+
+    <h2>Flexbox Layout with Divs</h2>
+    <div style="display: flex; justify-content: centre;">
+        <div style="background: pink; padding: 20px;">Box 1</div>
+        <div style="background: lightblue; padding: 20px;">Box 2</div>
+        <div style="background: lightyellow; padding: 20px;">Box 3</div>
+    </div>
+
+    <h2> Div with Border and Shadow</h2>
+    <div style="border: 2px solid #690202; padding: 20px; box-shadow: 1px 2px 10px rgba(0,0,0,0.2);">
+        Stylish Box
+    </div>
+
+    <h2>Div Card with Image and Text</h2>
+    <div style="border: 1px solid #ccc; padding: 15px; width: 250px;">
+        <img src="https://i.pinimg.com/736x/8e/4b/46/8e4b462bbed35b77417b027137244516.jpg" style="width: 100%;">
+        <h3>Card Title</h3>
+        <p>This is a simple card using a div.</p>
+        <button>Hello</button>
+    </div>
+
+    <h2>Gradient Background Div</h2>
+    <div style="padding: 30px; background: linear-gradient(to right, #ff7e5f, #feb47b); color: white;">
+        Beautiful Gradient Background
+    </div>
+
+    <h2>Div with a Hover Effect</h2>
+    <div style="width: 200px; height: 100px; background: skyblue; transition: 0.3s;transform: scale(1.1);"
+        onmouseover="this.style.background='steelblue'" onmouseout="this.style.background='skyblue'">
+        Hover over me!
+    </div>
+
+    <h2>Div That Looks Like a Sticky Note</h2>
+    <div style="background: #ffff88; padding: 20px; width: 200px; font-family: cursive; box-shadow: 5px 5px 10px #ccc; transform: rotate(-5deg);">
+        Don’t forget to code today!
+      </div>
+      
+      <h2>Glassmorphism Effect</h2>
+      <div style="background: rgba(255, 255, 255, 0.2); backdrop-filter: blur(8px); padding: 20px; border-radius: 10px; color: white; border: 1px solid rgba(255, 255, 255, 0.3); width: 300px;">
+        Glass-like div effect!
+      </div>
+      
+      <h2>Collapsible Div (Pure HTML + JS)</h2>
+      <div onclick="document.getElementById('hidden').style.display='block'" style="cursor: pointer; background: coral; padding: 10px; color: white;">
+        Click to show more...
+      </div>
+      <div id="hidden" style="display: none; padding: 10px; background: lightcoral;">
+        🎉 Surprise! Here's some hidden content.
+      </div>
+
+      <h2>Responsive Grid Using Divs</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px;">
+        <div style="background: lavender; padding: 20px;">1</div>
+        <div style="background: lavender; padding: 20px;">2</div>
+        <div style="background: lavender; padding: 20px;">3</div>
+        <div style="background: lavender; padding: 20px;">4</div>
+      </div>
+
+      <h2> Color Palette using Divs</h2>
+      <div style="display: flex;">
+        <div style="width: 50px; height: 50px; background: #ff6b6b;"></div>
+        <div style="width: 50px; height: 50px; background: #feca57;"></div>
+        <div style="width: 50px; height: 50px; background: #1dd1a1;"></div>
+        <div style="width: 50px; height: 50px; background: #54a0ff;"></div>
+      </div>
+
+      <h2> Div as a Badge/Label</h2>
+      <div style="display: inline-block; background: crimson; color: white; padding: 5px 10px; border-radius: 50px;">
+        New!
+      </div>
+
+      <h2>Mobile Notification Card</h2>
+      <div style="max-width: 300px; padding: 15px; background: #fff3cd; border: 1px solid #ffeeba; border-radius: 10px;">
+        <strong>⚠️ Alert:</strong> You have 2 unread messages.
+      </div>
+
+      <h2>Chat Bubble Style</h2>
+      <div style="max-width: 250px; background: #e0f7fa; padding: 10px 15px; border-radius: 20px; margin: 10px 0;">
+        Hello! This is a chat message.
+      </div>
+      
+
+</body>
+
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Tag</title>
+</head>
+
+<body>
+    <h2>Very Basic Table</h2>
+    <table border="1">
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+
+    </table>
+
+    <h2>Table with Headers</h2>
+    <table border="1">
+        <tr>
+            <th>City</th>
+            <th>Population</th>
+        </tr>
+        <tr>
+            <td>Mumbai</td>
+            <td>2L</td>
+        </tr>
+    </table>
+
+    <h2>Table with Caption</h2>
+    <table border="1">
+        <caption>🌍Countries and their capitals</caption>
+        <tr>
+            <th>Country</th>
+            <th>Capital</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>New Delhi</td>
+        </tr>
+    </table>
+
+    <h2>Add 3 Rows</h2>
+    <table border="1">
+        <tr>
+            <th>Fruit</th>
+            <th>Color</th>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>Red</td>
+        </tr>
+        <tr>
+            <td>Banana</td>
+            <td>Yellow</td>
+        </tr>
+        <tr>
+            <td>Grapes</td>
+            <td>Purple</td>
+        </tr>
+        <tr>
+            <td>Guava</td>
+            <td>Green</td>
+        </tr>
+    </table>
+
+    <h2>Mix th & td</h2>
+    <table border="1">
+        <tr>
+            <th>Item</th>
+            <td>Pencil</td>
+        </tr>
+        <tr>
+            <th>Price</th>
+            <td>$1</td>
+        </tr>
+        <tr>
+            <th>Quantity</th>
+            <td>100</td>
+        </tr>
+    </table>
+
+
+    <h2>Table with Styles</h2>
+    <table style="border: 2px solid rgb(122, 1, 1);">
+        <tr>
+            <td>Styled Cell</td>
+            <td>Another</td>
+        </tr>
+    </table>
+
+    <h2>Use colspan</h2>
+    <table border="1">
+        <tr>
+            <th colspan="2">Full Row</th>
+        </tr>
+        <tr>
+            <td>Left</td>
+            <td>Right</td>
+        </tr>
+        <tr>
+            <td>cell 1</td>
+            <td>cell 2</td>
+        </tr>
+    </table>
+
+    <h2>Use rowspan</h2>
+    <table border="1">
+        <tr>
+            <th rowspan="2">Category</th>
+            <td>Math</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Language</th>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>German</td>
+        </tr>
+    </table>
+
+    <h2>Table With Emoji Caption</h2>
+    <table border="1">
+        <caption>📚 Subject Scores</caption>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>95</td>
+        </tr>
+    </table>
+
+    <h2>Add Hover Effect</h2>
+    <style>
+        tr:hover {
+            background-color: #fbe74f;
+        }
+    </style>
+    <table border="1">
+        <tr>
+            <th>Book</th>
+            <th>Author</th>
+        </tr>
+        <tr>
+            <td>1984</td>
+            <td>George Orwell</td>
+        </tr>
+    </table>
+
+    <h2> Style Headings Only</h2>
+    <style>
+        th {
+            background-color: rgb(3, 120, 122);
+            color: white;
+            text-align: center;
+        }
+    </style>
+    <table border="1">
+        <tr>
+            <th>Team</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>Red</td>
+            <td>85</td>
+        </tr>
+    </table>
+
+    <h2>Table Width</h2>
+    <table border="1" style="width: 300px;">
+        <tr>
+            <td>Wide Cell</td>
+            <td>Another</td>
+        </tr>
+    </table>
+
+    <h2>Add Border Collapse</h2>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 1px dotted #a1024a;
+            padding: 10px;
+        }
+    </style>
+    <table>
+        <tr>
+            <th>Movie</th>
+            <th>Year</th>
+        </tr>
+        <tr>
+            <td>Inception</td>
+            <td>2010</td>
+        </tr>
+    </table>
+
+    <h2>Add Background Color to Rows</h2>
+    <style>
+        tr:nth-child(odd) {
+            background-color: #f5efef;
+        }
+    </style>
+    <table border="1">
+        <tr>
+            <th>Day</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>Mon</td>
+            <td>Gym</td>
+        </tr>
+        <tr>
+            <td>Tue</td>
+            <td>Study</td>
+        </tr>
+    </table>
+
+
+    <h2>Combine All Tags</h2>
+    <table border="1">
+        <caption>🧮 Budget Sheet</caption>
+        <tr>
+            <th>Item</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>Rent</td>
+            <td>$500</td>
+        </tr>
+        <tr>
+            <td>Food</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <th colspan="2">total</th>
+        </tr>
+    </table>
+
+    <h2>Fancy Table</h2>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            border: 2px dashed rgb(99, 1, 99);
+        }
+    </style>
+    <table>
+        <caption>🎨 Colors</caption>
+        <tr>
+            <td style="background-color: rgb(255, 153, 0);">Red</td>
+            <td>#FF0000</td>
+        </tr>
+    </table>
+
+    <h2>Capital Cities Table</h2>
+    <table border="1">
+        <tr>
+            <th>Country</th>
+            <th>Capital</th>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>Paris</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>Delhi</td>
+        </tr>
+        <tr>
+            <td>Austria</td>
+            <td>Vienna</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>Tokyo</td>
+        </tr>
+    </table>
+
+    <h2>Add Images in Cells</h2>
+    <table border="1">
+        <tr>
+            <td><img height="300px" src="https://i.pinimg.com/736x/84/fe/65/84fe65ae049fea94a7425b078f7f5676.jpg"
+                    alt="Sample"></td>
+            <td>Description</td>
+        </tr>
+    </table>
+
+    <h2>Table Without Borders</h2>
+    <table style="border: #fbd34f;">
+        <tr>
+            <td>No</td>
+            <td>Borders</td>
+        </tr>
+    </table>
+
+    <h2>Use Table for Layout</h2>
+    <table border="1">
+        <tr>
+            <td>Left Menu</td>
+            <td>Main Content</td>
+        </tr>
+    </table>
+
+    <h2>Table Inside a Table</h2>
+    <table border="1">
+        <tr>
+            <td>Outer Table
+                <table border="1">
+                    <tr>
+                        <td>Inner Table<table border="1">
+                                <tr>
+                                    <td>Innermost Table</td>
+                                </tr>
+
+                            </table>
+                        </td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <h2>Table with Merged Cells</h2>
+    <table border="1">
+        <tr>
+            <td rowspan="2">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+        </tr>
+    </table>
+
+    <h2>Align Text</h2>
+    <table border="1">
+        <tr>
+            <td style="text-align: right;vertical-align: top;">Right</td>
+            <td style="text-align: center;">Center</td>
+        </tr>
+    </table>
+
+    <h2>Responsive Width Table</h2>
+    <table style="width: 100%;" border="1">
+        <tr>
+            <th>Full Width Table</th>
+            <th>✓</th>
+        </tr>
+        <tr>
+            <td>Stretches to screen</td>
+            <td>Yes</td>
+        </tr>
+    </table>
+
+    <h2>Table Challenge!</h2>
+    
+    <table>
+        <caption>Countries and their Capitals</caption>
+    <tr>
+        <th>Country</th>
+        <th>Capital</th>
+    </tr>
+    <tr>
+        <td>🇮🇳India</td>
+        <td>Delhi</td>
+    </tr>
+    <tr>
+        <td>🇳🇵Nepal</td>
+        <td>Kathmandu</td>
+    </tr>
+    <tr>
+        <td>🇧🇩Bangladesh</td>
+        <td>Dhaka</td>
+    </tr>
+    <tr>
+        <td>🇱🇰Sri Lanka</td>
+        <td>Colombo</td>
+    </tr>
+    <tr>
+        <th colspan="2"> 🌍Countries</th>
+    </tr>
+
+</table>
+</body>
+
+</html>

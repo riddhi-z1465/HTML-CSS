@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📝 My Project – HTML Level Up</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        .product-card:hover {
+            background-color: #e0f7fa;
+            transform: scale(1.03);
+            cursor: pointer;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+            font-family: sans-serif;
+            transition: background 0.3s;
+        }
+
+        .btn-green {
+            background: green;
+        }
+
+        .btn-blue {
+            background: dodgerblue;
+        }
+
+        .btn-orange {
+            background: orange;
+            color: #222;
+        }
+
+        .btn-dark {
+            background: #333;
+        }
+
+        .btn:hover {
+            opacity: 0.85;
+        }
+
+        img {
+            height: 400px;
+            border-radius: 8px;
+        }
+
+        .circle {
+            list-style-type: circle;
+        }
+
+        .square {
+            list-style-type: square;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Advanced HTML Practice Set</h1>
+    <h2>HTML Formatting — Resume Snippet</h2>
+    <h2><u>👨‍💼 John Doe</u></h2>
+    <p><strong>Email:</strong> <em>john.doe@example.com</em></p>
+    <p><mark>Skills:</mark> <small>HTML, CSS, Git, Debugging</small></p>
+    <p><strong>Experience:</strong> Frontend Developer <sup>(2021–2024)</sup></p>
+    <p><strong>Certifications:</strong> HTML<sub>5</sub>, CSS<sub>3</sub></p>
+
+
+    <h2>HTML Quotations — Review Section</h2>
+    <blockquote cite="https://www.amazon.com">
+        “This product changed my life!” – <abbr title="Verified Customer">VC</abbr>
+    </blockquote>
+    <q>Worth every penny.</q>
+
+    <blockquote cite="https://www.goodreads.com">
+        “An eye-opener from start to finish.” – <abbr title="Book Enthusiast">BE</abbr>
+    </blockquote>
+
+
+    <h2> HTML Comments — Annotated Page</h2>
+    <!-- Header of the site -->
+    <h1>Welcome to My Page</h1> <!-- heading h1 tag-->
+
+    <!-- This section holds user details -->
+    <p>Name: Alice</p> <!--paragraph tag-->
+
+
+
+    <h2>HTML Colors — Color Palette Table</h2>
+    <table border="1">
+        <tr>
+            <td style="background-color: hsl(0, 93%, 65%);">#ff4d4d</td>
+            <td style="background-color: hsl(140, 100%, 65%);">#4dff88</td>
+            <td style="background-color: rgb(77, 166, 255);">#4da6ff</td>
+        </tr>
+    </table>
+
+    <h2>HTML CSS — Styled Card</h2>
+    <div class="product-card" style="border: 2px solid #333; padding: 20px; width: 300px; background-color: #fafafa;">
+        <h3 style="color: #333;">📦 Product Name</h3>
+        <p style="font-size: 14px;">Some short description here.</p>
+    </div>
+
+    <h2>HTML Links — Button Style Links</h2>
+    <a href="https://chat.openai.com" class="btn btn-green">Go to ChatGPT</a>
+    <a href="https://developer.mozilla.org" class="btn btn-blue">MDN Docs</a>
+    <a href="https://github.com" class="btn btn-dark">GitHub</a>
+
+    <h2>HTML Images — Image Grid</h2>
+    <table>
+        <tr>
+            <td><img src="https://i.pinimg.com/736x/c8/23/55/c82355c545c785d4d5e529a5505bc7e4.jpg" alt="cat image 1">
+            </td>
+            <td><img src="https://i.pinimg.com/736x/c4/35/21/c43521e4bdaa33bee75c0cc9dd4d9260.jpg" alt="cat image 2">
+            </td>
+        </tr>
+    </table>
+
+
+    <h2> HTML Favicon — Multiple Icons</h2>
+    <!-- Inside <head> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+
+    <h2>HTML Page Title — Dynamic Concepts</h2>
+    <!-- In head -->
+    <title>📝 My Project – HTML Level Up</title>
+
+
+    <h2>HTML Tables — Billing Invoice</h2>
+    <table border="1">
+        <caption><strong>🧾 Invoice Summary</strong></caption>
+        <tr>
+            <th>Item</th>
+            <th>Qty</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Pen</td>
+            <td>2</td>
+            <td>$1.00</td>
+        </tr>
+        <tr style="background-color: #e0f7fa;">
+            <td>Book</td>
+            <td>5</td>
+            <td>$10.00</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total</td>
+            <td>$2.00</td>
+        </tr>
+    </table>
+
+    <h2>HTML Lists — Nested Navigation Menu</h2>
+    <ul class="circle">
+        <li>Home</li>
+        <li>About
+            <ul class="square">
+                <li>Team</li>
+                <li>Mission</li>
+            </ul>
+        </li>
+    </ul>
+
+
+    <h2>HTML Block & Inline — Layout Demo</h2>
+    <div style="display: inline-block;">
+        <div style="border: 1px solid black; padding: 10px;">
+            <span style="color: red;">Red</span> and
+            <span style="color: green;">Green</span> in a block.
+        </div>
+        <div style="border: 1px solid black; padding: 10px;">
+            <span style="color: pink;">Pink</span> and
+            <span style="color: purple;">Purple</span> in a block.
+        </div>
+        <div style="border: 1px solid black; padding: 10px;">
+            <span style="color: red;">red</span> and
+            <span style="color: orange;">Orange</span> in a block.
+        </div>
+    </div>
+</body>
+
+</html>

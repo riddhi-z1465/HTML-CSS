@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task1</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+
+
+        }
+
+        .heading {
+            padding: 30px;
+            background-color: rgb(54, 157, 3);
+            color: white;
+            text-align: center;
+        }
+
+        .navbar {
+            padding: 5px;
+            background-color: black;
+            color: white;
+        }
+
+        .main {
+            padding: 40px;
+            border: 1px solid black;
+            border-radius: 0 0 10px 10px;
+            margin: 0 20px 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .block {
+            background-color: #fafafa;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 80px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .instruction {
+            background-color: #e6f4ea;
+            padding: 10px;
+            border-left: 4px solid green;
+            margin-bottom: 15px;
+        }
+
+        .box {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+
+        .box1 {
+            background-color: #d1e7dd;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .box2 {
+            background-color: #f8d7da;
+            padding: 0;
+            margin: 30px;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .flex-item {
+            flex: 1;
+            padding: 15px;
+            text-align: center;
+            border-radius: 4px;
+            color: #000;
+        }
+
+        .item1 {
+            background-color: #b6d4fe;
+        }
+
+        .item2 {
+            background-color: #b5f7c7;
+        }
+
+        .code-tip {
+            background-color: #d1e7dd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        code {
+            background-color: #d0ebff;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        .centered-box {
+            border: 2px dashed green;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            margin: 20px 0;
+        }
+
+        .alert {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        footer{
+            padding: 30px;
+            margin-top: 60px;
+            background-color: #000;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h1>HTML + CSS Beginner Practise Guide</h1>
+            <p>understand basic HTML tags and CSS properties</p>
+        </div>
+
+        <div class="navbar">
+            <pre>HTML    CSS    Practice</pre>
+        </div>
+    </header>
+    <section class="main">
+        <h2 style="border-left: 4px solid green;text-align: left;">📘 <span class="title">HTML Basics</span></h2>
+        <div class="block">
+            <p><b>&lthtml></b>--Root element that wraps entire HTML document.</p>
+
+        </div>
+
+        <div class="block">
+            <p><b>&lthead></b>--Contains metadata like title.links to CSS,charset.</p>
+
+        </div>
+
+        <div class="block">
+            <p><b>&ltbody></b>--Visible pary of HTML page.</p>
+
+        </div>
+
+
+        <div class="block">
+            <p><b>&lth1> to &lth6></b>--Heading,h1 is largest.</p>
+
+        </div>
+
+        <div class="block">
+            <p><b>&ltp></b>--Paragraph text.</p>
+
+        </div>
+        <div class="block">
+            <p><b>&ltdiv></b>--Generic container block.</p>
+
+        </div>
+        <div class="block">
+            <p><b>&ltspan></b>--inline container.</p>
+
+        </div>
+        <div class="block">
+            <p><b>&lta href></b>--Hyperlink.</p>
+
+        </div>
+        <div class="block">
+            <p><b>&ltul>,&ltol>,&ltli></b>--Unordered,ordered lists and items.</p>
+
+        </div>
+        <div class="block">
+            <p><b>&lttable></b>--Table structure with &lttr>,&ltth>,&lttd>.</p>
+
+        </div>
+
+        <h2 style="border-left: 4px solid green;text-align: left;">🎨 <span class="title">CSS Basics</span></h2>
+        <div class="block">
+            <p><b>color</b>:Changes text color.</p>
+
+        </div>
+        <div class="block">
+            <p><b>background-color</b>:sets background.</p>
+
+        </div>
+        <div class="block">
+            <p><b>padding</b>:space inside the element.</p>
+
+        </div>
+        <div class="block">
+            <p><b>margin</b>:space outside the element.</p>
+
+        </div>
+        <div class="block">
+            <p><b>border</b>:adds outline around the element.</p>
+
+        </div>
+        <div class="block">
+            <p><b>font-size</b>:controls text size.</p>
+
+        </div>
+        <div class="block">
+            <p><b>text-align</b>:aligns text.</p>
+
+        </div>
+        <div class="block">
+            <p><b>display</b>:controls layout(block,inline,flex).</p>
+
+        </div>
+        <div class="block">
+            <p><b>flexbox</b>:layout system for flexible items.</p>
+
+        </div>
+        <div class="block">
+            <p><b>box-shadow</b>:adds shadow around elements.</p>
+
+        </div>
+
+
+        <h2>🧠 <span class="title">Practice Examples</span></h2>
+        <p class="instruction">Try modifying padding and margin values and observe changes.</p>
+
+        <div class="box box1"><strong>Box 1:</strong> Padding: 20px | Margin: 10px</div>
+        <div class="box box2"><strong>Box 2:</strong> Padding: 0 | Margin: 30px</div>
+
+        <div class="flex-container">
+            <div class="flex-item item1">Flex Item 1</div>
+            <div class="flex-item item2">Flex Item 2</div>
+        </div>
+
+        <div class="code-tip">
+            <p>Experiment with <code>text-align</code>, <code>font-size</code>, and <code>border-radius</code>.</p>
+        </div>
+
+        <div class="centered-box">Centered and styled text!</div>
+
+        <div class="alert">Rounded corner alert box.</div>
+        </div>
+
+
+        
+    </section>
+    <footer>© Riddhi Zunjarrao | Made With ❤️ </footer>
+</body>
+
+</html>

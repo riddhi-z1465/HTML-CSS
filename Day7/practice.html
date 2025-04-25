@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day7</title>
+    <style>
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #444;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4baba;
+        }
+
+        td code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Write HTML code to create a paragraph with bold, italic, and underlined text.</h2>
+    <p>This is paragraph with <b>bold</b>,<i> italic</i> and <u>underlined</u> text.</p>
+
+    <hr>
+    <h2>Create a hyperlink that opens the OpenAI website in a new browser tab.</h2>
+    <a href="https://www.openai.com" target="_blank">Visit OpenAI</a>
+
+    <hr>
+    <h2>How would you make part of a paragraph a clickable link without breaking the text flow?</h2>
+    <p>
+        Learn more about <a href="https://www.openai.com" target="_blank">OpenAI</a> and its innovations in AI.
+    </p>
+
+    <hr>
+
+    <h2>What is the difference between <strong> and <b>, and when should each be used?</h2>
+    <h2>Difference Between &lt;strong&gt; and &lt;b&gt;</h2>
+
+    <table>
+        <tr>
+            <th>Tag</th>
+            <th>Purpose</th>
+            <th>Usage Example</th>
+        </tr>
+        <tr>
+            <td><code>&lt;b&gt;</code></td>
+            <td>Used to make text bold without semantic importance.</td>
+            <td><code>&lt;b&gt;Bold Text&lt;/b&gt;</code></td>
+        </tr>
+        <tr>
+            <td><code>&lt;strong&gt;</code></td>
+            <td>Indicates that the text is of strong importance. Screen readers may emphasize it.</td>
+            <td><code>&lt;strong&gt;Important Text&lt;/strong&gt;</code></td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Demonstrate how to use the <a> tag to link to an internal section of the same page.</h2>
+    <a href="#about">Go to About Section</a>
+
+    <p>This is some content at the top of the page.</p>
+    <p>Scroll down to find the About section.</p>
+
+    
+    <div style="height: 500px;"></div>
+    <h2 id="about">About Section</h2>
+    <p>This is the content of the About section, linked internally using the &lt;a&gt; tag.</p>
+
+
+    <hr>
+
+    <h2>Create a nested unordered list in HTML. Include at least two levels of nesting.</h2>
+    <ul>
+        <li>Fruits
+            <ul>
+                <li>Apples</li>
+                <li>Bananas</li>
+            </ul>
+        </li>
+        <li>Vegetables
+            <ul>
+                <li>Carrots</li>
+                <li>Spinach</li>
+            </ul>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: rgb(244, 247, 250);
+        }
+
+        form {
+            padding: 30px;
+            border: 2px solid rgb(220, 215, 215);
+            border-radius: 8px;
+            margin: 40px 450px 40px 450px;
+            background-color: white;
+        }
+
+        fieldset {
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            border-radius: 8px;
+
+        }
+        input[type="text"], input[type="email"],select{
+            width: 100%;
+            padding: 10px; 
+        }
+        .gender{
+           
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="/submit-form" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" pattern="\d{3}[-]\d{3}[-]\d{4}" placeholder="123-456-789"
+                required>
+            <fieldset>
+                <legend>Gender</legend>
+                
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+      
+            </fieldset><br>
+
+            <lable for="text">City:</lable>
+            <select id="city" name="city">
+                <option value="nyc">New York</option>
+                <option value="la">Los Angeles</option>
+                <option value="sf">San Francisco</option>
+            </select><br><br>
+
+            <label>Subscribe to our newsletter:</label>
+            <input type="checkbox"><br><br>
+            <label for="file">Upload your resume:</label>
+            <input type="file" id="file" name="resume"><br><br>
+
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"
+                placeholder="write your message here..."></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

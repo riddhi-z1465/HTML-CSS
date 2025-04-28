@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Task2</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background-color: #f4f4f4;
+        }
+
+        .image img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .info {
+            flex-grow: 1;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .navbar li {
+            margin: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Responsive design for small screens */
+        @media (max-width: 768px) {
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background-color: lightgray;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .main-content {
+                width: 100%;
+            }
+        }
+        footer{
+            background-color: rgb(118, 3, 3);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 500px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="riddhi.png" alt="Profile Image">
+        </div>
+        <div class="info">
+            <h2>Riddhi Zunjarrao</h2>
+            <p>Hello, my name is Riddhi Zunjarrao, and I am currently pursuing a Bachelor of Technology (B.Tech) in Computer
+                Science and Engineering at ITM Skills University.<br>
+                I enjoy working on real-world projects, participating in technical events, and collaborating with others to find
+                innovative solutions.<br>
+                My goal is to build a strong foundation in my field and contribute meaningfully to the tech industry.<br></p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="sidebar left">Left Sidebar</div>
+        <div class="main-content">Main Content</div>
+        <div class="sidebar right">Right Sidebar</div>
+    </div>
+
+    <footer>© 2025 Riddhi Zunjarrao</footer>
+</body>
+
+</html>

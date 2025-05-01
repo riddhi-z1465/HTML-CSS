@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shape Outside Example</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 40px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.float-img {
+  float: left;
+  width: 200px;
+  height: 200px;
+  shape-outside: circle(50%);
+  clip-path: circle(50%);
+  margin: 0 20px 20px 0;
+  
+  
+  /* For browser support */
+  -webkit-shape-outside: circle(50%);
+  -webkit-clip-path: circle(50%);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://i.pinimg.com/736x/7f/be/fe/7fbefe7c1b9b28386deb33c9da88f0ed.jpg" alt="Circle Float Image" class="float-img" />
+    <p>
+      This paragraph wraps around the circular image. The `shape-outside` property makes it possible
+      for the text to curve along the shape, creating a visually dynamic effect that's more engaging
+      than the standard rectangular float box. This technique is great for magazines, blogs, or any content that wants a creative edge.
+    </p>
+  </div>
+</body>
+</html>

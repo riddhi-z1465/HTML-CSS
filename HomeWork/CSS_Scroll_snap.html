@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS Scroll Snap Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+
+        h2 ,h1{
+            text-align: center;
+            margin: 40px 0 10px;
+        }
+
+        .box {
+            width: 400px;
+            height: 320px;
+            border: 2px solid #ccc;
+            margin: 0 auto 40px;
+            overflow: auto;
+            background: white;
+            scroll-behavior: smooth;
+        }
+
+        .item {
+            scroll-snap-align: center;
+            flex-shrink: 0;
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+            border-radius: 12px;
+        }
+
+        .item img {
+            width: 300px;
+            height: 300px;
+            margin: 10px;
+        }
+
+        /* Snap Containers */
+        .snap-x-m {
+            scroll-snap-type: x mandatory;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .snap-y-m {
+            scroll-snap-type: y mandatory;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .snap-both-m {
+            scroll-snap-type: both mandatory;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .snap-x-p {
+            scroll-snap-type: x proximity;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .snap-y-p {
+            scroll-snap-type: y proximity;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .snap-both-p {
+            scroll-snap-type: both proximity;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        img {
+
+            border-radius: 8px;
+            margin: 20px;
+        }
+
+        /* Colors */
+        .c1 {
+            background: #e91e63;
+        }
+
+        .c2 {
+            background: #2196f3;
+        }
+
+        .c3 {
+            background: #4caf50;
+        }
+
+        .c4 {
+            background: #ff9800;
+        }
+
+        .c5 {
+            background: #9c27b0;
+        }
+
+        .c6 {
+            background: #795548;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Scroll Snap Gallery</h1>
+    <h2>scroll-snap-type: <code>x mandatory</code></h2>
+    <div class="box snap-x-m">
+        <div class="item c1"><img src="https://i.pinimg.com/736x/a5/dc/0a/a5dc0af50d185b7f9111949b17e17e1a.jpg"></div>
+        <div class="item c2"><img src="https://i.pinimg.com/736x/a8/68/32/a86832051be6aa81cdf163e4d03919dd.jpg"></div>
+        <div class="item c3"><img src="https://i.pinimg.com/736x/00/6b/c1/006bc1f4768454c7c109ba1644034218.jpg"></div>
+    </div>
+
+    <h2>scroll-snap-type: <code>y mandatory</code></h2>
+    <div class="box snap-y-m">
+        <div class="item c1"><img src="https://i.pinimg.com/736x/a5/dc/0a/a5dc0af50d185b7f9111949b17e17e1a.jpg"></div>
+        <div class="item c2"><img src="https://i.pinimg.com/736x/a8/68/32/a86832051be6aa81cdf163e4d03919dd.jpg"></div>
+        <div class="item c3"><img src="https://i.pinimg.com/736x/00/6b/c1/006bc1f4768454c7c109ba1644034218.jpg"></div>
+    </div>
+
+    <h2>scroll-snap-type: <code>both mandatory</code></h2>
+    <div class="box snap-both-m">
+        <div class="item c1"><img src="https://i.pinimg.com/736x/a5/dc/0a/a5dc0af50d185b7f9111949b17e17e1a.jpg"></div>
+        <div class="item c2"><img src="https://i.pinimg.com/736x/a8/68/32/a86832051be6aa81cdf163e4d03919dd.jpg"></div>
+        <div class="item c3"><img src="https://i.pinimg.com/736x/00/6b/c1/006bc1f4768454c7c109ba1644034218.jpg"></div>
+        <div class="item c4"><img src="https://i.pinimg.com/736x/1e/73/47/1e73470030d3e7df681c14ee6bc57b4c.jpg"></div>
+        <div class="item c5"><img src="https://i.pinimg.com/736x/aa/46/33/aa46331e304b5423a1194ce5c428f171.jpg"></div>
+    </div>
+
+    <h2>scroll-snap-type: <code>x proximity</code></h2>
+    <div class="box snap-x-p">
+        <div class="item c1"><img src="https://i.pinimg.com/736x/a5/dc/0a/a5dc0af50d185b7f9111949b17e17e1a.jpg"></div>
+        <div class="item c2"><img src="https://i.pinimg.com/736x/a8/68/32/a86832051be6aa81cdf163e4d03919dd.jpg"></div>
+        <div class="item c3"><img src="https://i.pinimg.com/736x/00/6b/c1/006bc1f4768454c7c109ba1644034218.jpg"></div>
+    </div>
+
+    <h2>scroll-snap-type: <code>y proximity</code></h2>
+    <div class="box snap-y-p">
+        <div class="item c1"><img src="https://i.pinimg.com/736x/a5/dc/0a/a5dc0af50d185b7f9111949b17e17e1a.jpg"></div>
+        <div class="item c2"><img src="https://i.pinimg.com/736x/a8/68/32/a86832051be6aa81cdf163e4d03919dd.jpg"></div>
+        <div class="item c3"><img src="https://i.pinimg.com/736x/00/6b/c1/006bc1f4768454c7c109ba1644034218.jpg"></div>
+    </div>
+
+    <h2>scroll-snap-type: <code>both proximity</code></h2>
+    <div class="box snap-both-p">
+        <div class="item c1"><img src="https://i.pinimg.com/736x/a5/dc/0a/a5dc0af50d185b7f9111949b17e17e1a.jpg"></div>
+        <div class="item c2"><img src="https://i.pinimg.com/736x/a8/68/32/a86832051be6aa81cdf163e4d03919dd.jpg"></div>
+        <div class="item c3"><img src="https://i.pinimg.com/736x/00/6b/c1/006bc1f4768454c7c109ba1644034218.jpg"></div>
+        <div class="item c4"><img src="https://i.pinimg.com/736x/1e/73/47/1e73470030d3e7df681c14ee6bc57b4c.jpg"></div>
+        <div class="item c5"><img src="https://i.pinimg.com/736x/aa/46/33/aa46331e304b5423a1194ce5c428f171.jpg"></div>
+        <div class="item c6"><img src="https://i.pinimg.com/736x/a5/dc/0a/a5dc0af50d185b7f9111949b17e17e1a.jpg"></div>
+    </div>
+
+</body>
+
+</html>

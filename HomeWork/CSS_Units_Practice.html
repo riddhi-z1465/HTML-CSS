@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+
+
+        }
+
+        .container {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: green;
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .box1 {
+            padding: 1rem ;
+            max-width: 200px;
+            height: 100%;
+            
+        }
+
+        .box2 {
+            width: 15vw;
+            height: 15vh;
+        }
+
+        .box3 {
+            width: 10%;
+            height: 200px;
+            padding: 1rem;
+        }
+
+        .box4 {
+            width: 15vmin;
+            height: 50vmin;
+            padding: 1rem;
+        }
+
+        .box5 {
+            font-size: 1.5em;
+            width: 10em;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Units Practice</h1>
+    <div class="container">
+        <section class="box">
+            <div class="box1">This box uses <strong>rem</strong> for padding and <strong>px</strong> for max-width</div>
+        </section>
+        <section class="box">
+            <div class="box2">This box uses <strong>vw</strong> for width and <strong>vh</strong> for height</div>
+        </section>
+        <section class="box">
+            <div class="box3">This box uses <strong>%</strong> for width and height</div>
+        </section>
+        <section class="box">
+            <div class="box4">This box uses <strong>vmin</strong> for width and height</div>
+        </section>
+        <section class="box">
+            <div class="box5">This box uses <strong>em</strong> for width and font-size</div>
+        </section>
+        
+    </div>
+</body>
+
+</html>

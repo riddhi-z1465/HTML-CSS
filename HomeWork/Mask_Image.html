@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Mask Image Gallery</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 40px;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.mask-box {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.mask-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  
+  /* Mask initially off */
+  mask-image: none;
+}
+
+/* Apply mask on hover using gradient shape */
+.mask-box:hover img {
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  mask-size: cover;
+  mask-repeat: no-repeat;
+
+  /* for webkit-based browsers */
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+
+  transform: scale(1.1);
+  filter: grayscale(30%);
+}
+
+  </style>
+</head>
+<body>
+  <h1 class="gallery-title">CSS Mask Image Hover</h1>
+  <div class="gallery">
+
+    <div class="mask-box">
+      <img src="https://i.pinimg.com/736x/19/99/bd/1999bdb21db58c013b98eea1700e325e.jpg" alt="Mountain" />
+    </div>
+
+    <div class="mask-box">
+      <img src="https://i.pinimg.com/736x/32/c8/cc/32c8cc4dbb4398ff1c827d65d549a7d8.jpg" alt="Bridge" />
+    </div>
+
+    <div class="mask-box">
+      <img src="https://i.pinimg.com/736x/d9/b8/b1/d9b8b1de769b81cff5c953b6a67781f1.jpg" alt="Forest" />
+    </div>
+
+  </div>
+</body>
+</html>

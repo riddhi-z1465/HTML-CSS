@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dev Handbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #43a1ba, #037ca4);
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        details {
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            /* max-width: 600px; */
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        summary {
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        summary::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        p {
+            margin: 10px 0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>📗 Student Dev Handbook</h1>
+    <details name="notes">
+        <summary>Introduction</summary>
+        <p>Welcome to the Student Dev Handbook. This section provides an overview of what to expect.</p>
+    </details>
+    <details name="notes">
+        <summary>HTML Basics</summary>
+        <p>Learn the structure of an HTML document and the basic tags used in web development.</p>
+    </details>
+    <details name="notes">
+        <summary>CSS Styling</summary>
+        <p>Understand how to style your web pages using CSS, including selectors, properties, and values.</p>
+    </details>
+    <details name="notes">
+        <summary>JavaScript Essentials</summary>
+        <p>Get started with JavaScript, the programming language of the web, and learn basic concepts.</p>
+    </details>
+    <details name="notes">
+        <summary>Advanced Topics</summary>
+        <p>Explore advanced topics such as responsive design, frameworks, and performance optimization.</p>
+    </details>
+</body>
+
+</html>

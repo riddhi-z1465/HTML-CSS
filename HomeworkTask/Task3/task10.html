@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Feed</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4bcbc;
+        }
+
+        .social-container {
+            display: grid;
+            grid-template-areas:
+                "profile feed sidebar";
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile { 
+            grid-area: profile;
+            
+
+         }
+        .feed { grid-area: feed; }
+        .sidebar { grid-area: sidebar; }
+
+        h2 {
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .social-container {
+                grid-template-areas:
+                    "profile"
+                    "feed"
+                    "sidebar";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="social-container">
+        <section class="section profile">
+            <h2>Profile</h2>
+            <p>User info, bio, and stats.</p>
+        </section>
+        <section class="section feed">
+            <h2>News Feed</h2>
+            <p>Recent posts from friends and followed accounts.</p>
+        </section>
+        <aside class="section sidebar">
+            <h2>Sidebar</h2>
+            <p>Trending topics, ads, or suggested connections.</p>
+        </aside>
+    </div>
+</body>
+</html>

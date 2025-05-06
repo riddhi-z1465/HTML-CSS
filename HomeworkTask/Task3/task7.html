@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "starters mains desserts";
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #ba181b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .menu-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .starters { grid-area: starters; }
+        .mains { grid-area: mains; }
+        .desserts { grid-area: desserts; }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            .menu-container {
+                grid-template-areas:
+                    "header"
+                    "starters"
+                    "mains"
+                    "desserts";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <header class="header">Delicious Eats - Menu</header>
+        <section class="menu-section starters">
+            <h2>Starters</h2>
+            <p>Garlic Bread - $5</p>
+            <p>Bruschetta - $6</p>
+            <p>Caesar Salad - $7</p>
+        </section>
+        <section class="menu-section mains">
+            <h2>Main Dishes</h2>
+            <p>Grilled Chicken - $12</p>
+            <p>Vegetable Pasta - $10</p>
+            <p>Steak & Potatoes - $15</p>
+        </section>
+        <section class="menu-section desserts">
+            <h2>Desserts</h2>
+            <p>Chocolate Cake - $7</p>
+            <p>Ice Cream Sundae - $6</p>
+            <p>Fruit Tart - $8</p>
+        </section>
+    </div>
+</body>
+</html>

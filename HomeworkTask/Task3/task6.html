@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .resume-container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "left-column right-column";
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #5f0f40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .left-column {
+            grid-area: left-column;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-column {
+            grid-area: right-column;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .resume-container {
+                grid-template-areas:
+                    "header"
+                    "right-column"
+                    "left-column";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <header class="header">Riddhi Zunjarrao</header>
+        <section class="left-column">
+            <h2>Skills</h2>
+            <p><ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul></p>
+            <h2>Experience</h2>
+            <p>Currently studying</p>
+            <h2>Education</h2>
+            <p>I am currently pursuing a Bachelor of Technology (B.Tech) in Computer
+                Science and Engineering at ITM Skills University.</p>
+        </section>
+        <section class="right-column">
+            <img src="https://i.pinimg.com/736x/df/82/47/df8247abf58e757b82f4225722b4ca26.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>Contact Details</h2>
+            <p>Email: riddhizunjarrao669@gmail.com</p>
+            <p>Phone: +123456789</p>
+        </section>
+    </div>
+</body>
+</html>

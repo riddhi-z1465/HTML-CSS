@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 60px auto 50px;
+            gap: 10px;
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #184e77;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #168aad;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            width: 250px;
+            height: 100%;
+        }
+
+        .content {
+            grid-area: content;
+            padding: 20px;
+            margin-left: 260px;
+            /* Adjust for sidebar */
+            overflow-y: auto;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #34a0a4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <nav class="sidebar">Sidebar Navigation</nav>
+        <main class="content">Main Content Area</main>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+
+</html>

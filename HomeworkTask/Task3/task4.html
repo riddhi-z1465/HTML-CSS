@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .product-grid {
+            display: grid;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #f9f9f9;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 599px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 899px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/0f/33/4e/0f334e2b96f30ba116838792505c0380.jpg" alt="Product 1">
+            <p>Product 1</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/2c/7f/0c/2c7f0c9c688a5b5166d31bcecd22bd50.jpg" alt="Product 2">
+            <p>Product 2</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/94/55/37/945537dd3fa9a8f4723616fdb0068639.jpg" alt="Product 3">
+            <p>Product 3</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/e4/bd/6e/e4bd6e89a67be666907c611e8ec86d7e.jpg" alt="Product 4">
+            <p>Product 4</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/1b/5c/0f/1b5c0fc4e59c853b73667b66dc8cbd21.jpg" alt="Product 5">
+            <p>Product 5</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/43/36/83/433683284878910430f8aea842b3fbfb.jpg" alt="Product 6">
+            <p>Product 6</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/b0/ff/b8/b0ffb86c6d9b8069a38497aa7da16b54.jpg" alt="Product 7">
+            <p>Product 7</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/08/ab/2d/08ab2dcbb8208c97ebccddb0c4c64de5.jpg" alt="Product 8">
+            <p>Product 8</p>
+        </div>
+    </div>
+</body>
+</html>

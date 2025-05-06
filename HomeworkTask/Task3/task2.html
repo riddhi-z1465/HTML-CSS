@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Photo Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 599px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 899px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://i.pinimg.com/736x/08/ee/5d/08ee5d36bbe4397d426c86d5021aac54.jpg" alt="Image 1">
+        <img src="https://i.pinimg.com/736x/11/56/98/1156989ed65b664e950f0b93619915d1.jpg" alt="Image 2">
+        <img src="https://i.pinimg.com/736x/de/d5/04/ded5046c1971d2217f493ca33f9e44d7.jpg" alt="Image 3">
+        <img src="https://i.pinimg.com/736x/c1/6c/9d/c16c9df2f3be2338ab5cac175533c593.jpg" alt="Image 4">
+        <img src="https://i.pinimg.com/736x/98/6e/1f/986e1f0e7b3344017890bbecf3f5dbe0.jpg" alt="Image 5">
+        <img src="https://i.pinimg.com/736x/72/ef/a8/72efa86026a4e3aa58e3241f6ecf5489.jpg" alt="Image 6">
+        <img src="https://i.pinimg.com/736x/13/60/02/136002d6555c960a90584d02ec648693.jpg" alt="Image 7">
+        <img src="https://i.pinimg.com/736x/3e/a3/58/3ea3584ff19fbd5c4a03b80264872be8.jpg" alt="Image 8">
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main sidebar"
+                "footer footer";
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: 80px auto 60px;
+            gap: 15px;
+            padding: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #001d3d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #ddd;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #003566;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">Blog Header</header>
+        <main class="main">
+            <h2>Blog Post Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac vehicula orci.</p>
+        </main>
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Additional content, links, or ads can go here.</p>
+        </aside>
+        <footer class="footer">Blog Footer</footer>
+    </div>
+</body>
+</html>

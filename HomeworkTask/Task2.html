@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Task</title>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f9fa;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background-color: #e9ecef;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #3300ff;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .card {
+            flex: 1 1 250px;
+            background-color: #efbe55;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .columns {
+            display: flex;
+            align-items: stretch;
+            gap: 10px;
+        }
+
+        .column {
+            flex: 1;
+            background-color: #d5c77a;
+            padding: 20px;
+        }
+
+        .layout {
+            display: flex;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #e9ecef;
+            padding: 20px;
+        }
+
+        .main-content {
+            flex: 3;
+            background-color: #e5558c;
+            padding: 20px;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 10px;
+           
+        }
+        .button-row button:last-child {
+            margin-left: auto;
+        }
+
+        .vertical-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .vertical-nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            background-color: #a1e1e0;
+        }
+
+        .order-container {
+            display: flex;
+            gap: 10px;
+        }
+        .order-container div {
+            padding: 20px;
+            background-color: #c7f09b;
+        }
+        .order-container .second {
+            order: 1;
+        }
+        .order-container .first {
+            order: 2;
+        }
+
+        .grow-container {
+            display: flex;
+            gap: 10px;
+        }
+        .grow-container div {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #e793b2;
+        }
+        .grow-container .grow-more {
+            flex-grow: 2;
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+        .profile img {
+            flex: 1 1 150px;
+            max-width: 150px;
+            border-radius: 50%;
+        }
+        .profile-info {
+            flex: 2 1 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Flexbox Practice Set</h1>
+    <h2> Exercise 1: Horizontal Navigation Bar</h2>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2> Exercise 2: Center a Box</h2>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+    <h2>Exercise 3: Responsive Card Row</h2>
+    <div class="card-container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+
+    <h2> Exercise 4: Equal Height Columns</h2>
+    <div class="columns">
+        <div class="column">Column 1</div>
+        <div class="column">Column 2 with more content</div>
+        <div class="column">Column 3</div>
+    </div>
+
+    <h2>Exercise 5: Sidebar + Main Content</h2>
+    <div class="layout">
+        <div class="sidebar">Sidebar</div>
+        <div class="main-content">Main Content</div>
+    </div>
+
+    <h2>Exercise 6: Button Row with Right Aligned Button</h2>
+    <div class="button-row">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+    </div>
+
+    <h2>Exercise 7: Vertical Flexbox Navigation</h2>
+    <nav class="vertical-nav">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+
+    <h2>Exercise 8: Flex Order Change</h2>
+    <div class="order-container">
+        <div class="first">First</div>
+        <div class="second">Second</div>
+        <div class="third">Third</div>
+    </div>
+
+    <h2> Exercise 9: Grow One Box More Than Others</h2>
+    <div class="grow-container">
+        <div>Box 1</div>
+        <div class="grow-more">Box 2 (Grows More)</div>
+        <div>Box 3</div>
+    </div>
+
+    <h2> Exercise 10: Profile Layout</h2>
+    <div class="profile">
+        <img src="https://i.pinimg.com/736x/6b/6c/ce/6b6cce22e12fbd4a6e79d168558b2f0a.jpg" alt="Profile Picture">
+        <div class="profile-info">
+            <h2>Riddhi Zunjarrao</h2>
+            <p>Hello, my name is Riddhi Zunjarrao, and I am currently pursuing a Bachelor of Technology (B.Tech) in Computer
+                Science and Engineering at ITM Skills University.<br>
+                I enjoy working on real-world projects, participating in technical events, and collaborating with others to find
+                innovative solutions.<br>
+                My goal is to build a strong foundation in my field and contribute meaningfully to the tech industry.</p>
+        </div>
+    </div>
+</body>
+</html>
+
